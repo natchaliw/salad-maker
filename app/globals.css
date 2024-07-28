@@ -4,6 +4,6 @@
 
 @layer base {
     body {
-        @apply bg-bodycolor flex gap-10
+        @apply bg-bodycolor flex justify-center gap-10
     }
 }
