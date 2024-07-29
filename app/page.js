@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "./components/Head";
+import Menu from "./components/Menu";
 
 // =========================== Import Image ===========================
 import poster from "../public/poster/poster.png"
@@ -13,7 +14,7 @@ import checked_block from "../public/category/checked-block.png"
 
 export default function Home() {
   return (
-    <div className="m-h-fullscreen py-12 pr-10 pl-0 gap-8 flex flex-col items-center">
+    <div className="w-full min-h-screen py-12 pr-10 pl-0 gap-8 flex flex-col items-center">
       <Head/>
 
       <div className="flex flex-col gap-10">
@@ -38,7 +39,7 @@ export default function Home() {
           <h3 className="text-2xl font-bold leading-9">
             Select Category
           </h3>
-          <div className="flex justifly-start gap-6 ">
+          <div className="flex justifly-start gap-6 flex-wrap ">
             {/* ============== vetgetables ==============*/}
             <div className="w-40 h-40 py-8 px-6 gap-4 bg-white rounded-2xl flex flex-col justify-center items-center shadow-category relative">
               <Image 
@@ -85,7 +86,7 @@ export default function Home() {
                 className="absolute top-3 right-3"/>
             </div>
             {/* ============== Protein ==============*/}
-            <div className="w-40 h-40 py-8 px-6 gap-4 bg-white rounded-2xl flex flex-col justify-center items-center shadow-category relative">
+            <div className="w-40 h-40 py-8 px-6 gap-4 bg-white npm run devrounded-2xl flex flex-col justify-center items-center shadow-category relative">
               <Image 
                 src={protein} 
                 alt="protein" 
@@ -122,6 +123,9 @@ export default function Home() {
           <h3 className="text-2xl font-bold leading-9">
             Choose your ingredients to make a salad
           </h3>
+        </div>
+        <div className="w-full">
+          <Menu/>
         </div>
       </div>
     </div>

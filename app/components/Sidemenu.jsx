@@ -16,10 +16,10 @@ function Sidemenu() {
 
 
         {/* ============== Side Menu ==============*/}
-        <div className="relative px-11 py-14 gap-[59px] bg-white w-[345px] h-screen fixed top-0 -left-96  lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 flex flex-col items-center justify-start">
+        <div className="relative px-11 py-14 gap-[59px] bg-white w-[345px] min-h-screen fixed top-0 -left-96  lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 flex flex-col items-center justify-start">
 
           {/* ============== Logo  ==============*/}
-          <h1 className="text-darkbluecolor text-3xl leading-[45px] font-bold">
+          <h1 className="text-darkbluecolor text-3xl leading-[45px] font-bold text-textcolor">
             SALADMAKER
             <span className="text-yellowcolor">
               .

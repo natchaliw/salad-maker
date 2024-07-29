@@ -1,0 +1,139 @@
+[
+  {
+    "ingredient": "Green leaf lettuce",
+    "category": "vegetable",
+    "image": "Vetgetables/green-leaf-lettuce.png",
+    "calories": 8
+  },
+  {
+    "ingredient": "Bok choy",
+    "category": "vegetable",
+    "image": "Vetgetables/bok-choy.png",
+    "calories": 7
+  },
+  {
+    "ingredient": "Kale",
+    "category": "vegetable",
+    "image": "Vetgetables/kale.png",
+    "calories": 10
+  },
+  {
+    "ingredient": "Red cabbage",
+    "category": "vegetable",
+    "image": "Vetgetables/red-cabbage.png",
+    "calories": 10
+  },
+  {
+    "ingredient": "Carrots",
+    "category": "vegetable",
+    "image": "Vetgetables/carrots.png",
+    "calories": 12
+  },
+  {
+    "ingredient": "Avocado",
+    "category": "fruit",
+    "image": "Fruit/avocado.png",
+    "calories": 120
+  },
+  {
+    "ingredient": "Tomato",
+    "category": "fruit",
+    "image": "Fruit/tomato.png",
+    "calories": 18
+  },
+  {
+    "ingredient": "Pineapple",
+    "category": "fruit",
+    "image": "Fruit/pineapple.png",
+    "calories": 25
+  },
+  {
+    "ingredient": "Mix berries",
+    "category": "fruit",
+    "image": "Fruit/mix-berries.png",
+    "calories": 28
+  },
+  { "ingredient": "Corn", 
+    "category": "fruit", 
+    "image": "Fruit/corn.png", 
+    "calories": 43 
+  },
+  {
+    "ingredient": "Barley",
+    "category": "topping",
+    "image": "Toppings/barley.png",
+    "calories": 100
+  },
+  {
+    "ingredient": "Cashew Nut",
+    "category": "topping",
+    "image": "Toppings/cashew-nut.png",
+    "calories": 110
+  },
+  {
+    "ingredient": "Crouton",
+    "category": "topping",
+    "image": "Toppings/crouton.png",
+    "calories": 81
+  },
+  {
+    "ingredient": "Grilled Shrimp",
+    "category": "protein",
+    "image": "Protein/grilled-shrimp.png",
+    "calories": 98
+  },
+  {
+    "ingredient": "Grilled Chicken Breast",
+    "category": "protein",
+    "image": "Protein/grilled-chicken-breast.png",
+    "calories": 165
+  },
+  {
+    "ingredient": "Bacon",
+    "category": "protein",
+    "image": "Protein/bacon.png",
+    "calories": 108
+  },
+  {
+    "ingredient": "Smoked Salmon",
+    "category": "protein",
+    "image": "Protein/smoked-salmon.png",
+    "calories": 58
+  },
+  {
+    "ingredient": "Grilled Beef",
+    "category": "protein",
+    "image": "Protein/grilled-beef.png",
+    "calories": 250
+  },
+  {
+    "ingredient": "Cream Dressing",
+    "category": "dressing",
+    "image": "Dressing/cream-dressing.png",
+    "calories": 60
+  },
+  {
+    "ingredient": "Balsamic Dressing",
+    "category": "dressing",
+    "image": "Dressing/balsamic-dressing.png",
+    "calories": 26
+  },
+  {
+    "ingredient": "Japanese Shoyu",
+    "category": "dressing",
+    "image": "Dressing/japanese-shoyu.png",
+    "calories": 15
+  },
+  {
+    "ingredient": "Seafood Cream Dressing",
+    "category": "dressing",
+    "image": "Dressing/seafood-cream-dressing.png",
+    "calories": 75
+  },
+  {
+    "ingredient": "Roast Sesame Dressing",
+    "category": "dressing",
+    "image": "Dressing/roast-sesame-dressing.png",
+    "calories": 60
+  }
+]

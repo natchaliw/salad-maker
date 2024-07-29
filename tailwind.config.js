@@ -13,11 +13,15 @@ module.exports = {
         graycolor : "#A098AE",
         bodycolor: "#F5F5F5",
         textcolor: "#2E2E2E",
-        postercolor: "#FFEA75"
+        postercolor: "#FFEA75",
+        imgcolor: "#D9D9D9"
       },
       boxShadow: {
         "box": "0 20px 50px rgba(46, 46, 46, 0.05)",
         "category": "0 4px 8px rgba(55, 62, 68, 0.25)"
+      },
+      fontFamily: {
+        "sarabun" : ["Sarabun", "sans-serif"]
       }
     },
   },
