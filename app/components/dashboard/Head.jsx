@@ -1,8 +1,12 @@
+"use client"
+
 import React from "react"
 import Image from "next/image"
-import SearchIcon from "../../public/search.svg"
+import SearchIcon from "../../../public/search.svg"
+
 
 function Head() {
+
   return (
     <div className="w-full flex justify-between items-center">
         {/* ============== Welcome Title ==============*/}

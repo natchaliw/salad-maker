@@ -7,3 +7,12 @@
         @apply bg-bodycolor flex justify-center gap-10
     }
 }
+
+@layer utilities {
+    .active{
+        @apply shadow-category duration-100 ease-linear
+    }
+    .status {
+        @apply inline-block
+    }
+}
