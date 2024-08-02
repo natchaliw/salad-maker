@@ -3,14 +3,13 @@
 import React, { useContext }from 'react'
 import { MenuContext } from './MenuContextProvider'
 
-function footer({setShowModal, isVisible}) {
+function footer({setShowModal}) {
 
     const {getTotalItems, getTotalCal} = useContext(MenuContext)
 
-if (!isVisible) return null
   return (
-    <div className="gap-4 flex items-center fixed bottom-0 right-0 py-6 px-8 bg-white w-[1575px] h-[144px]">
-        <div className="flex justify-between items-center w-[1201px] h-[96px] rounded-2xl py-4 px-8 gap-6 bg-yellowcolor">
+    <div className="gap-4 flex items-center py-6 px-8 bg-white w-[1200px] 2xl:w-[1575px] h-[100] 2xl:h-[144px]">
+        <div className="flex justify-between items-center w-[826px] 2xl:w-[1201px] h-[100px] 2xl:h-[96px] rounded-2xl py-4 px-8 gap-6 bg-yellowcolor">
             <div className="flex gap-4 justify-center items-center">
                 <div className="text-[32px] font-bold leading-[48px] text-yellowcolor bg-white py-2 px-6 gap-[10px] rounded-2xl">
                     {getTotalItems()}

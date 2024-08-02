@@ -3,6 +3,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import MenuContextProvider from "./components/dashboard/MenuContextProvider";
+import Sidemenu from "./components/Sidemenu";
 
 const poppins = Poppins({ weight: ['400','500','700'], subsets: ["latin"] });
 
@@ -14,9 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`w-full min-h-screen ${poppins.className}`}>
+      <body className={`w-full h-screen ${poppins.className} flex`}>
         <MenuContextProvider>
-          {children}
+          <Sidemenu className="flex-grow"/>
+          <main className="flex-grow">{children}</main>
         </MenuContextProvider>
       </body>
     </html>

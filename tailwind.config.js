@@ -16,10 +16,12 @@ module.exports = {
         postercolor: "#FFEA75",
         imgcolor: "#D9D9D9",
         redcolor: "#FE0000",
+        redcolor2: "#FF3F56",
         greencolor: "#2FB62D",
         bgcolor: "rgba(0, 0, 0, 0.5)",
         blackcolor: "#232325",
-        inputcolor: "#E8EAEB"
+        inputcolor: "#E8EAEB",
+        hrcolor: "#DBDBDB"
       },
       boxShadow: {
         "box": "0 20px 50px rgba(46, 46, 46, 0.05)",
@@ -30,7 +32,7 @@ module.exports = {
         "notto" : ["Noto Sans Thai", "sans-serif"]
       },
       backgroundImage: {
-        "recipe_card": "url('../public/poster/recipe-card.png')",
+        "recipe_card": "url('../public/poster/recipe-card.png')"
       }
     },
   },

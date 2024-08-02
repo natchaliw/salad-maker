@@ -1,55 +1,32 @@
-let salads = [
-    {
-        id: 1,
-        name: "SaladMe",
-        ingredients: [1, 2]
-    }
-];
+let salads = [];
 
-export async function GET(req, { params }) {
+// ============================= GET =============================
+
+export async function GET(req, res) {
     return new Response(JSON.stringify(salads), {
         status: 200,
         headers: {
             'Content-Type': 'application/json'
         }
-    });
+    })
 }
 
-export async function POST(req, res) {
-    const { name, ingredients } = await req.json();
+
+// ============================= POST =============================
+
+export async function POST (req,res) {
+    const { name, ingredients, calories } = await req.json()
     const newSalad = {
         id: salads.length + 1,
         name,
         ingredients,
-    };
-    return new Response(JSON.stringify(newSalad), {
+        calories
+    }
+    salads.push(newSalad)
+    return new Response(JSON.stringify(salads), {
         status: 201,
         headers: {
             'Content-Type': 'application/json'
         }
-    });
-}
-
-export async function PUT(req, res) {
-    const { id, updatedName, updatedIngredients } = await req.json();
-    salads = salads.map(salad =>
-        salad.id === id ? { ...salad, name: updatedName, ingredients: updatedIngredients } : salad
-    );
-    return new Response(JSON.stringify({ message: 'Salad updated successfully' }), {
-        status: 200,
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    });
-}
-
-export async function DELETE(req, res) {
-    const { id: deleteId } = await req.json();
-    salads = salads.filter(salad => salad.id !== deleteId);
-    return new Response(null, {
-        status: 204,
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    });
+    })
 }

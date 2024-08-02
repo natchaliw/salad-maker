@@ -8,20 +8,22 @@ import { MenuContext } from './MenuContextProvider'
 
 function CreateRecipe({isVisible, setShowModal}) {
 
-  const {cartItems, setCartItems, nameNewMenu, setNameNewMenu, createSalad} = useContext(MenuContext)
+  const {cartItems, setCartItems, nameNewMenu, setNameNewMenu, createSalad, getTotalCal} = useContext(MenuContext)
 
-  const handleCreateRecipe = (e) => {
-  e.preventDefault()
-  createSalad(nameNewMenu, cartItems);
-  setNameNewMenu('')
-  setShowModal(false)
-  setCartItems([])
-  }
-
+  const handleOnSubmit = (e) => {
+    const totalCalories = getTotalCal(cartItems);
+    e.preventDefault()
+    createSalad(nameNewMenu, cartItems, totalCalories);
+    setNameNewMenu('')
+    setShowModal(false)
+    setCartItems([])
+    }
+    
   if (!isVisible) return null
   return (
     <div className="fixed inset-0 bg-bgcolor w-full h-screen flex flex-col items-center gap-10">
-      <div className="absolute top-1/4 flex flex-col bg-white w-1/4 max-rounded-xl">
+      <div 
+        className="absolute top-1/4 flex flex-col bg-white w-1/4 rounded-xl">
         <span>
           <Image
             src={close_icon}
@@ -44,6 +46,7 @@ function CreateRecipe({isVisible, setShowModal}) {
             type="text"
             value={nameNewMenu}
             placeholder="input your recipe name....."
+            required
             className="bg-white border-2 border-inputcolor rounded-lg gap-1 py-3 px-2 text-sm font-normal leading-[21.15px] w-full"
             onChange={(e)=>setNameNewMenu(e.target.value)}
           />
@@ -56,7 +59,7 @@ function CreateRecipe({isVisible, setShowModal}) {
           <button
             type="submit"
             className="bg-greencolor rounded-lg text-white py-4 px-3 text-base leading-6 font-bold font-notto w-1/2"
-            onClick={handleCreateRecipe}
+            onClick={handleOnSubmit}
             >Create New Recipe</button>
         </div>
       </div>

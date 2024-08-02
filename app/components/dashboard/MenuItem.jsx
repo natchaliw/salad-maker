@@ -11,13 +11,14 @@ function MenuItem({id,name,img,cal}) {
     const {cartItems, addToCart, removeFromCart} = useContext(MenuContext)
 
   return (
-    <div className="flex flex-col justify-center w-[344px] h-[363px] rounded-2xl gap-6 px-6 py-8 bg-white" >
+    <div className="flex flex-col justify-center w-[270px] 2xl:w-[344px] h-[300px] 2xl:h-[363px] rounded-2xl gap-6 px-6 py-8 bg-white" >
         <div className="bg-imgcolor">
             <Image
                 src={`/Ingredient/${img}`}
                 alt={name}
                 width={296}
-                height={180} /> 
+                height={180}
+            /> 
         </div>
         <div className="flex flex-col h-[107px]">
             <div className="gap-2">
